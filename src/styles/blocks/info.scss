@@ -1,0 +1,118 @@
+.info {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &__box {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin: auto;
+    width: 211px;
+    height: 26px;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px 30px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 13.32px 13.32px;
+
+    &-words {
+      font-family: 'InterItalic', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      line-height: 12.5px;
+      font-size: 10.33px;
+
+      @include onDesktop {
+        font-size: 20px;
+        line-height: 24.2px;
+      }
+    }
+
+    &-numbers {
+      font-family: 'InterItalic', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      line-height: 14.92px;
+      font-size: 12.33px;
+
+      @include onDesktop {
+        line-height: 33.89px;
+        font-size: 28px;
+      }
+    }
+
+    @include onDesktop {
+      flex-direction: column;
+      margin: 0;
+      gap: 0;
+      width: 215px;
+      height: 86px;
+      padding: 14px 22px;
+      border-radius: 0px 0px 25.8px 25.8px;
+    }
+  }
+
+  &__text {
+    font-family: 'InterItalic', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-first {
+      font-size: 24.1px;
+      line-height: 29px;
+
+      @include onDesktop {
+        font-size: 43.5px;
+        line-height: 53px;
+      }
+    }
+
+    &-second {
+      font-size: 24.1px;;
+      line-height: 29px;
+      padding-left: 35px;
+
+      @include onDesktop {
+        font-size: 43.5px;
+        line-height: 53px;
+        padding-left: 55px;
+      }
+    }
+
+    &-third {
+      font-size: 31.3px;
+      line-height: 38px;
+
+      @include onDesktop {
+        font-size: 56.6243px;
+        line-height: 69px;
+      }
+    }
+
+    @include onDesktop {
+      margin-top: 85px;
+    }
+  }
+
+  @include onTablet {
+    padding: 0 250px;
+  }
+
+  @include onDesktop {
+    padding: 0 350px;
+    flex-direction: row-reverse;
+    align-items: unset;
+    gap: 0;
+    justify-content: space-between;
+  }
+}

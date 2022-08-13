@@ -1,0 +1,8 @@
+.background {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(49.2% 38.83% at 50% 55.08%, rgba(41, 59, 43, 0) 23.4%, #293B2B 100%);
+  z-index: 1000;
+  @include onDesktop {
+    background: linear-gradient(0deg, rgba(41, 59, 43, 0.35), rgba(41, 59, 43, 0.35)), radial-gradient(58.29% 46% at 50% 54%, rgba(41, 59, 43, 0) 50.26%, #293B2B 100%);
+  }
+}

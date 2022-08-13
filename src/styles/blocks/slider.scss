@@ -1,0 +1,99 @@
+// .slider {
+
+// }
+
+.slide {
+  height: 760px;
+ 
+  &__back {
+    height: 650px;
+    z-index: -1;
+    position: relative;
+    background: no-repeat url(../images/football_stadium.png);
+    opacity: 0.9;
+  }
+
+  &__img {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    right: 10px;
+    z-index: -1;
+    overflow: hidden;
+
+
+    &-image {
+      height: 625px;
+    }
+  }
+
+  &__box{
+    position: absolute;
+    // left: 10%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &-text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15.7428px;
+      line-height: 120%;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+
+      @include onDesktop {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: left;
+      }
+    }
+
+    &-button {
+      font-family: 'Inter';
+      width: 263px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22.0186px;
+      line-height: 148.9%;
+      color: #fff;
+      background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+      border-radius: 61.1628px;
+      padding: 8px 73px;
+
+      border: none;
+
+      @include onDesktop {
+        font-weight: 600;
+        width: 430px;
+        font-size: 36px;
+        line-height: 148.9%;
+        border-radius: 100px;
+        padding: 13px 120px;
+      }
+    }
+
+    @include onDesktop {
+      gap: 25px;
+      align-items: flex-start;
+    }
+  }
+
+  @include onDesktop {
+    height: 660px;
+  }
+}
+
+.first {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}

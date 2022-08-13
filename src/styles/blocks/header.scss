@@ -1,0 +1,85 @@
+.header {
+  height: 40px;
+
+  &__top {
+    height: 40px;
+    background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+    mix-blend-mode: normal;
+
+    @include onDesktop {
+      height: 60px;
+    }
+  }
+
+  &__up {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      width: 70px;
+      height: 25px;
+      cursor: pointer;
+
+      @include onDesktop {
+        width: 100px;
+        height: 26px;
+      }
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 19px;
+      color: #fff;
+
+      &--text {
+        display: none;
+        font-family: 'InterRegular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: underline;
+
+        @include onDesktop {
+          display: block;
+        }
+      }
+
+      &--button {
+        font-family: 'Inter';
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10.6667px;
+        line-height: 13px;
+        width: 54px;
+        height: 13px;
+        padding: 4px 16px;
+        text-align: center;
+        background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+        border-radius: 240.667px;
+
+        @include onDesktop {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          padding: 5px 25px;
+          width: 80px;
+          height: 19px;
+        }
+      }
+    }
+
+    @include onDesktop {
+      height: 60px;
+    }
+  }
+
+  @include onDesktop {
+    height: 60px;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  box-sizing: border-box;
+  height: 300px;
+  background: #293b2b;
+  padding-top: 40px;
+
+  @include onDesktop {
+    height: 360px;
+    padding-top: 90px;
+
+  }
+}

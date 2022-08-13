@@ -1,0 +1,10 @@
+.page {
+  font-family: "InterRegular", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  &__body {
+    margin: 0;
+  }
+}
