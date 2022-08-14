@@ -1,91 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingz test</title>
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.6151375c.svg">
-    <link rel="stylesheet" href="./scripts/lib/slick/slick.scss">
-    <link rel="stylesheet" href="./scripts/lib/slick/slick-theme.scss">
-    <link rel="stylesheet" href="./styles/main.scss">
-  </head>
-  <body class="page__body">
-    <div class="background">
-      <header class="page__section header">
-        <div class="header__top">
-          <div class="container">
-            <div class="header__up">
-              <div class="header__up-logo">
-                <a href="#">
-                  <img src="./images/Logo.svg" alt="LOGO">
-                </a>
-              </div>
-              <div class="header__up-wrap">
-                <div class="header__up-wrap--text">Acceder</div>
-                <div class="header__up-wrap--button">Regístrate</div>
-              </div>
-            </div>
-            <div class="header__info">
-            </div>
-            
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingz test</title>
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.6151375c.svg">
+  <link rel="stylesheet" href="./scripts/lib/slick/slick.scss">
+  <link rel="stylesheet" href="./scripts/lib/slick/slick-theme.scss">
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body class="page__body">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="#" class="logo__link">
+          <!-- <span>logo</span> -->
+          <img src="./images/Logo.svg" alt="LOGO" class="logo__img">
+        </a>
+        <div class="header__actions">
+          <a href="#" class="header__actions-underline">Acceder</a>
+          <button href="#" class="header__actions-btn">Registrate</button>
         </div>
-        
-      </header>
-      <div class="slider">
-        <div class="slide">
-          <div class="slide__back"></div>
-          <div class="slide__img">
-            <img
-              class="slide__img-image"
-              src="./images/soccer_fans.png"
-              alt="Fans"
-            >
-          </div>
-          <div class="container">
-            <div class="slide__box">
-              <div class="slide__box-text">
-                COMBOBOOST <br class="first"> hasta el 100% <br> en apuestas combinadas
-              </div>
-              <button class="slide__box-button">
-                Regístrate
-              </button>
+        <div class="bottom-action">
+          <div class="text-wrap">
+            <div class="bottom-action__text1">
+              Deposito minimo
             </div>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide__back"></div>
-          <div class="slide__img">
-            <img
-              class="slide__img-image"
-              src="./images/soccer_fans.png"
-              alt="Fans"
-            >
-          </div>
-          <div class="container">
-            <div class="slide__box">
-              <div class="slide__box-text">
-                COMBOBOOST <br class="first"> hasta el 100% <br> en apuestas combinadas
-              </div>
-              <button class="slide__box-button">
-                Regístrate
-              </button>
+            <div class="bottom-action__text2">
+              500 MXN
+            </div>
+            <div class="bottom-action__text3">
+              Deposito minimo 500 MXN
             </div>
           </div>
         </div>
       </div>
     </div>
+  </header>
 
-    <footer class="page__section footer">
-      <div class="container">
 
+  <div class="main-slider">
+    <div class="main-slider__wrapper">
+      <div class="titles__wrapper">
+        <div class="container">
+          <div class="titles">
+            <h1 class="title-1">Bono de primer </h1>
+            <h1 class="title-2">depósito hasta</h1>
+            <h1 class="title-3">40 000 MXN</h1>
+          </div>
+          
+        </div>
       </div>
-    </footer>
+      <div class="main-slider__list">
+        <div class="main-slider__item">
+          <div class="bg">
+            <img src="./images/banner-img-1.jpeg" alt="" class="img">
+          </div>
+          <div class="content__wrapper">
+            <div class="container">
+              <div class="content">
+                <h2 class="subtitle">COMBOBOOST <br class="br"> hasta el 100% <br> en apuestas combinadas</h2>
+                <div class="btncont">
+                  <a href="#"
+                    class="button"
+                  >
+                    Regístrate
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__item">
+          <div class="bg">
+            <img src="./images/banner-img-2.jpeg" alt="" class="img">
+          </div>
+          <div class="content__wrapper">
+            <div class="container">
+              <div class="content">
+                <h2 class="subtitle">
+                  Reembolso del 500% <br> en apuestas deportivas
+                </h2>
+                <div class="btncont">
+                  <a href="#"
+                    class="button"
+                  >
+                    Regístrate
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./scripts/lib/slick/slick.min.js"></script>
-    <script src="./scripts/main.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#" class="footer__top-logo">
+          <img src="./images/Logo.svg" alt="LOGO" class="logo__img">
+        </a>
+        <form class="footer__top-form" action="POST">
+          <input
+            type="email"
+            class="form-email"
+            placeholder="Correo electronico"
+          >
+          <button
+            type="button"
+            class="form-button"
+          >
+            Suscríbete
+          </button>
+        </form>
+      </div>
+      <div class="footer__main">
+        <div class="footer__main-paymentMob">
+          <img src="./images/payment_systems_mob.svg" alt="payment">
+        </div>
+        <div class="footer__main-payment">
+          <img class="cache" src="./images/payment_systems.svg" alt="payment">
+        </div>
+      </div>
+
+      <a href="#" class="footer__top-logoBot">
+        <img src="./images/Logo.svg" alt="LOGO" class="logo__img">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
 </html>
 
 

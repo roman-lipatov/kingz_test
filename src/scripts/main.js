@@ -1,5 +1,10 @@
 'use strict';
 
+// eslint-disable-next-line no-undef
 $(document).ready(function() {
-  $('.slider').slick();
+  // eslint-disable-next-line no-undef
+  $('.main-slider__list').slick({
+    'dots': true,
+    'arrows': false,
+  });
 });
